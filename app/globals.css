@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #A3B18A; /* Muted Sage Green */
+  --color-secondary: #DAD7CD; /* Soft Beige */
+  --color-accent: #E63946; /* Deep Coral Red */
+  --color-neutral-creamy: #FEFAE0; /* Creamy Off-White */
+  --color-neutral-forest: #3A5A40; /* Deep Forest Green */
+  --color-neutral-grey: #CED4DA; /* Cool Grey */
+
+  --color-success: #84A98C;
+  --color-warning: #FBC02D;
+  --color-error: #E57373;
+
+  /* Font variables expected to be defined in layout.tsx via next/font */
+  /* e.g. --font-inter: 'Inter', sans-serif; */
+  /*      --font-poppins: 'Poppins', sans-serif; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-neutral-creamy text-neutral-forest antialiased;
+  font-family: var(--font-inter, 'Inter', 'sans-serif'); /* Fallback if --font-inter is not defined */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins, 'Poppins', 'sans-serif'); /* Fallback if --font-poppins is not defined */
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-neutral-creamy);
+}
+
+/* Custom scrollbar for a more integrated feel - optional */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-forest);
+}

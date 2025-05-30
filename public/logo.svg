@@ -1,0 +1,20 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text-logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px;
+      font-weight: 600; /* Semi-bold for a modern feel */
+    }
+    .hue {
+      fill: #A3B18A; /* Muted Sage Green - primary color */
+    }
+    .neu {
+      fill: #E63946; /* Deep Coral Red - accent color */
+    }
+  </style>
+  <text x="0" y="45" class="text-logo hue">hue</text>
+  <text x="85" y="45" class="text-logo neu">neu</text>
+  <!-- Optional: A subtle graphic element if desired -->
+  <!-- Example: A small dot or line -->
+  <!-- <circle cx="175" cy="30" r="5" fill="#3A5A40" /> --> 
+</svg>
