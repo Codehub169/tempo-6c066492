@@ -50,10 +50,10 @@ const WhatWeDo: React.FC = () => {
   return (
     <section id="what-we-do" className="py-16 md:py-24 bg-primary text-neutral-forest">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-center mb-4">
           What We Do
         </h2>
-        <p className="text-lg md:text-xl font-body text-center mb-12 md:mb-16 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl font-sans text-center mb-12 md:mb-16 max-w-2xl mx-auto">
           We weave artistry and intention into every detail, transforming ideas into evocative experiences.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
@@ -63,13 +63,13 @@ const WhatWeDo: React.FC = () => {
               className="bg-neutral-creamy p-6 rounded-soft shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:-translate-y-1"
             >
               {/* Icon Placeholder: Replace with actual SVG icons or visual elements later */}
-              <div className="w-12 h-12 bg-accent text-neutral-creamy rounded-full flex items-center justify-center font-heading text-2xl font-bold mb-4">
+              <div className="w-12 h-12 bg-accent text-neutral-creamy rounded-full flex items-center justify-center font-poppins text-2xl font-bold mb-4">
                 {service.iconPlaceholder}
               </div>
-              <h3 className="text-2xl font-heading font-semibold mb-2 text-neutral-forest">
+              <h3 className="text-2xl font-poppins font-semibold mb-2 text-neutral-forest">
                 {service.title}
               </h3>
-              <p className="font-body text-neutral-forest leading-relaxed">
+              <p className="font-sans text-neutral-forest leading-relaxed">
                 {service.description}
               </p>
             </div>
